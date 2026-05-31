@@ -1407,7 +1407,7 @@ dependencies = [
  "oxc_data_structures",
  "oxc_index",
  "oxc_semantic",
- "oxc_sourcemap 7.0.0",
+ "oxc_sourcemap",
  "oxc_span",
  "oxc_str",
  "oxc_syntax",
@@ -1501,7 +1501,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "eb3e6120999627ec9703025eab7c9f410ebb7e95557632a8902ca48210416c2b"
 dependencies = [
  "nonmax",
- "rayon",
  "serde",
 ]
 
@@ -1573,19 +1572,6 @@ dependencies = [
  "rustc-hash",
  "self_cell",
  "smallvec",
-]
-
-[[package]]
-name = "oxc_sourcemap"
-version = "6.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "36801dbbd025f2fa133367494e38eef75a53d334ae6746ba0c889fc4e76fa3a3"
-dependencies = [
- "base64-simd",
- "json-escape-simd",
- "rustc-hash",
- "serde",
- "serde_json",
 ]
 
 [[package]]
@@ -2130,20 +2116,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a2eb9349b6444b326872e140eb1cf5e7c522154d69e7a0ffb0fb81c06b37543f"
 
 [[package]]
-name = "string_wizard"
-version = "1.0.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f0a81357c56c7281652864c8927548a133c0fafe1ed8fabdbe687e01f89b08c4"
-dependencies = [
- "memchr",
- "oxc_index",
- "oxc_sourcemap 6.0.1",
- "regex",
- "rustc-hash",
- "serde",
-]
-
-[[package]]
 name = "strsim"
 version = "0.11.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2212,7 +2184,6 @@ dependencies = [
  "similar 3.1.1",
  "smallvec",
  "sourcemap",
- "string_wizard",
  "test-generator",
  "thiserror",
  "tikv-jemallocator",
